@@ -1,0 +1,18 @@
+BIC.mmlcr               Bayesian Information Criterion
+dcnorm                  Density function for Censored Normal
+                        Distribution 
+dnb2                    Density for negative binomial, used in mmlcr
+fitted.mmlcr            Extract mmlcr Model Component Fitted or
+                        Residual Values 
+mmlcr                   Mixed Mode Latent Class Regression 
+mmlcr.test.df           An artificial data frame for `mmlcr' examples. 
+mmlcrObject             Mixed Mode Latent Class Regression Object 
+mmlcrclassify           Classification of Individuals by Modal
+                        Posterior Probabilities 
+mmlcrcomponentinit      Initialize an `mmlcr' component 
+mmlcrfit                Used internally by `mmlcr' to fit `mmlcr'
+                        component objects. 
+mmlcrlike               Used internally by `mmlcr'. 
+plot.mmlcr              Plot Components of mmlcr Object
+theta.mmmod             Estimate theta of the Negative Binomial by
+                        Moments 
