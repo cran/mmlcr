@@ -20,10 +20,11 @@ different types, as well as longitudinal or time-invariant.
 }
 \usage{
 mmlcr(object = NULL, ...)
-\method{mmlcr}{default}(object = NULL, outer, components, data, 
-	subset = TRUE, n.groups = 2, prior.prob = NULL, 
-	post.prob = NULL, no.fit = FALSE, max.iter = 50, trace = TRUE, 
-	tol = 0.005, ...)
+\method{mmlcr}{default}(object = NULL, outer, components,
+                 data = error("data must be given (as a data.frame)"),
+                 subset, n.groups = 2, prior.prob = NULL,
+                 post.prob = NULL, no.fit = FALSE, max.iter = 50, 
+                 trace = TRUE, tol = 0.005, ...)
 \method{mmlcr}{mmlcr}(object, max.iter = 50, trace = TRUE, tol = 0.005, ...)
 }
 \arguments{

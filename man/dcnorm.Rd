@@ -7,9 +7,10 @@
   in a form suitable for mmlcrlike
 }
 \usage{
-dcnorm(x, mean = rep(0, length(x)), sigma = rep(1, length(x)), 
-	min = rep(.Machine$double.xmin, length(x)), 
-	max = rep(.Machine$double.xmax, length(x)))
+dcnorm(x, mean = rep(0, length(x)), sigma = rep(1,
+                 length(x)), min = rep(-(.Machine$double.xmax),
+                 length(x)), max = rep(.Machine$double.xmax,
+                 length(x)))
 }
 \arguments{
   \item{x}{ vector of quantiles }
@@ -32,4 +33,3 @@ dcnorm(0, mean = 0, sigma = 1)
 dcnorm(0, mean = 0, sigma = 1, min = 0)
 }
 \keyword{distribution}
-
