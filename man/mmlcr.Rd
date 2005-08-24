@@ -100,6 +100,25 @@ called latent classes or groups.
 It is not yet possible to specify a prior, or even starting values, for the parameters
 of the individual latent classes. Instead, one can assign starting values to the posterior
 probabilities of each individual via the post.prob part of the function call.
+
+In a typical use of this package, one might want to model, say, alcohol use.
+The idea is that there may be several model trajectories over the years, 
+such as little or no use, heavy use, adolescent-limited use, and so on. 
+For each class, we would like to model a different longitudinal regression 
+(i.e., the same form for the regression, but different coefficients for each latent class). 
+Furthermore, we would like to include covariates for class membership, 
+so that the model looks like
+
+    Covariates ==> Latent Class ==> Longitudinal Trajectory,
+
+with the regression coefficients on the right independent of the 
+covariates on the left conditional on class membership. 
+One could potentially have a number of arrows leading off of the latent class, 
+so that one could simultaneously model cigarette and alcohol use, for example. 
+The first arrow is modeled with the outer formula, which the second arrow is modeled
+with the formula(s) in the component term.
+
+
 }
 \seealso{
 \code{\link{mmlcrObject}}, \code{\link{mmlcrcomponentinit}}, 

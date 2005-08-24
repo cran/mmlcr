@@ -124,10 +124,10 @@ function(object, max.iter = 50, trace = TRUE, tol = 0.005, ...)
 				cat("loglike\t conv. index\t ll goal\t Class Percentages:\n"
 				  )
 			group.pct <- apply(post.prob, 2, sum) /  dim(post.prob)[1]
-			cat(paste(format(round(loglikelihood, 2), nsmall=2, scientific=c(-6,6)), 
+			cat(paste(format(round(loglikelihood, 2), nsmall=2 ), 
 				"\t", format(round(convergence.index, 2), nsmall=2), 
-				"\t", format(round(loglikegoal, 2),nsmall=2, scientific=c(-6,6)), 
-				"\t"), format(round(100 * unlist(group.pct, use.names = FALSE), 1),nsmall=1), 
+				"\t", format(round(loglikegoal, 2),nsmall=2), 
+				"\t"), format(round(100 * unlist(group.pct, use.names = FALSE), 1), nsmall=1), 
 				"\n")
 		}
 		if(is.na(loglikelihood) || is.infinite(loglikelihood) 
