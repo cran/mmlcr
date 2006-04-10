@@ -13,6 +13,7 @@
 "mmlcr.mmlcr"<-
 function(object, max.iter = 50, trace = TRUE, tol = 0.005, ...)
 {
+	require(MASS)
 	require(nnet)
 	require(nlme)
 	require(survival) # needed for censored normal functions
